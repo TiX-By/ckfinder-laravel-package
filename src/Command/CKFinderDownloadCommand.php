@@ -8,8 +8,8 @@ use Symfony\Component\HttpKernel\Kernel;
 
 class CKFinderDownloadCommand extends Command
 {
-    const LATEST_VERSION = '3.5.1.2';
-    const FALLBACK_VERSION = '3.5.1';
+    const LATEST_VERSION = '3.5.3.1';
+    const FALLBACK_VERSION = '3.5.3';
 
     protected $name = 'ckfinder:download';
 
@@ -77,7 +77,7 @@ class CKFinderDownloadCommand extends Command
                 }
         ]);
 
-        $this->info('Downlading the CKFinder 3 distribution package.');
+        $this->info('Downloading the CKFinder 3 distribution package.');
 
         $zipContents = @file_get_contents($this->buildPackageUrl(), false, $ctx);
 
