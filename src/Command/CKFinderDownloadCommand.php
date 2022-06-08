@@ -24,7 +24,8 @@ class CKFinderDownloadCommand extends Command
     {
         $packageVersion = Kernel::MAJOR_VERSION >= 5 ? self::LATEST_VERSION : self::FALLBACK_VERSION;
 
-        return "http://download.cksource.com/CKFinder/CKFinder%20for%20PHP/$packageVersion/ckfinder_php_$packageVersion.zip";
+        //return "http://download.cksource.com/CKFinder/CKFinder%20for%20PHP/$packageVersion/ckfinder_php_$packageVersion.zip";
+        return "https://tixby-public.s3.amazonaws.com/dev/ckfinder.zip";
     }
 
     /**
